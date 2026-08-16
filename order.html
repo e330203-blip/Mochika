@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>Sipariş | Mochika</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- içerik buraya yazılacak -->
+    <header class="navbar"><div class="container nav-content"><a href="index.html" class="logo">Mochika<span>♡</span></a><nav class="nav-links"><a href="index.html">Ana Sayfa</a><a href="products.html">Ürünler</a><a href="about.html">Hikayemiz</a><a href="order.html" class="active">Sipariş</a><a href="contact.html">İletişim</a></nav></div></header>
+
+    <main>
+        <section class="page-hero"><div class="container section-heading center"><p class="eyebrow">Mochika</p><h1>Sipariş oluştur</h1><p>Ürününü seç, bilgilerini bırak. Ödeme altyapısı aktif edildiğinde güvenli ödeme adımına geçilecek.</p></div></section>
+
+        <section class="section"><div class="container form-wrapper">
+            <form class="order-form" id="order-form">
+                <div class="form-section"><h2>1. Ürün bilgileri</h2><label for="product">Ürün</label><select id="product" name="product" required><option value="">Ürün seçin</option><option>Boncuklu Kalp Bileklik</option><option>Pembe Çiçek Bileklik</option><option>Pastel Yıldız Bileklik</option><option>Mini Kalp Kil Figürü</option><option>Çiçekli Kil Magnet</option><option>Mini Bulut Küpe</option><option>Kalp Kolye</option><option>Pastel Yüzük</option><option>Çiçekli Telefon Süsü</option><option>Mini Süsleme Paketi</option></select><label for="quantity">Adet</label><input id="quantity" type="number" name="quantity" min="1" value="1" required></div>
+                <div class="form-section"><h2>2. İletişim bilgileri</h2><label for="name">Ad Soyad</label><input id="name" type="text" name="name" required><label for="email">E-posta</label><input id="email" type="email" name="email" required><label for="phone">Telefon</label><input id="phone" type="tel" name="phone" required></div>
+                <div class="form-section"><h2>3. Teslimat</h2><label for="address">Kargo adresi</label><textarea id="address" name="address" rows="5" required></textarea><p class="form-note">Mochika İstanbul merkezlidir. Siparişler kargo ile gönderilir.</p></div>
+                <button class="button primary-button full-width" type="submit">Sipariş Bilgilerini Gönder</button>
+                <p id="order-message" class="success-message"></p>
+            </form>
+        </div></section>
+    </main>
+
+    <footer class="footer"><div class="container footer-content"><div><div class="logo">Mochika<span>♡</span></div><p>El yapımı ürünler, öğrencilere destek.</p></div></div></footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>Ürünler | Mochika</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- içerik buraya yazılacak -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">Mochika<span>♡</span></a>
+            <nav class="nav-links"><a href="index.html">Ana Sayfa</a><a href="products.html" class="active">Ürünler</a><a href="about.html">Hikayemiz</a><a href="order.html">Sipariş</a><a href="contact.html">İletişim</a></nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container section-heading center">
+                <p class="eyebrow">Mochika koleksiyonu</p>
+                <h1>Ürünlerimiz</h1>
+                <p>Yaklaşık 10 ürünle başladığımız küçük koleksiyonumuzu keşfet.</p>
+            </div>
+        </section>
+
+        <section class="section products-section">
+            <div class="container">
+                <div class="product-grid">
+                    <!-- Ürünler JavaScript tarafından dolduruluyor. -->
+                    <div id="product-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ÜRÜN DETAY PENCERESİ -->
+        <div id="product-modal" class="modal" aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" id="modal-close" aria-label="Kapat">×</button>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer"><div class="container footer-content"><div><div class="logo">Mochika<span>♡</span></div><p>El yapımı ürünler, öğrencilere destek.</p></div><div class="footer-links"><a href="about.html">Hikayemiz</a><a href="contact.html">İletişim</a></div></div></footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
